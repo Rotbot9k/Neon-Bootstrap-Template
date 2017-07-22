@@ -1,0 +1,269 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  width: 100%;
+  height: 100%; }
+
+.test {
+  position: fixed; }
+
+#navbar-top {
+  height: 20%; }
+  @media (min-width: 0px) and (max-width: 1000px) {
+    #navbar-top {
+      height: 8% !important; } }
+
+nav {
+  color: white; }
+  nav .navbar-brand {
+    font-size: 50pt;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080; }
+  nav a {
+    color: white;
+    font-size: 20pt;
+    margin-right: 3vh; }
+  nav a.active {
+    color: white !important;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080; }
+
+.push-right {
+  margin-left: 45% !important; }
+  @media (min-width: 0px) and (max-width: 1000px) {
+    .push-right {
+      margin-left: 0 !important;
+      background-color: rgba(7, 8, 29, 0.7); } }
+  @media (min-width: 1500px) and (max-width: 2000px) {
+    .push-right {
+      margin-left: 60% !important; } }
+
+body {
+  position: relative; }
+
+.start {
+  background: url("neon-project-images/start-bg.jpg");
+  background-size: cover;
+  height: 65vh;
+  border-bottom: 0.2vw solid white; }
+  @media (min-width: 0px) and (max-width: 1000px) {
+    .start {
+      height: 70vh; } }
+
+.bookmarks {
+  background: #07081D;
+  color: white; }
+  .bookmarks a {
+    color: white !important;
+    font-weight: bold !important; }
+  .bookmarks a:hover {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080; }
+  .bookmarks .desc {
+    border-right: 0.2vw solid white; }
+  .bookmarks .title {
+    margin-top: 3vh;
+    margin-bottom: 3vh; }
+  .bookmarks .margin {
+    padding-right: 5%;
+    padding-left: 5%; }
+  .bookmarks .more-href {
+    position: absolute;
+    bottom: 1vh;
+    margin-left: 80%;
+    font-weight: bold; }
+  .bookmarks .shortcut-container {
+    position: relative;
+    padding-bottom: 8vh; }
+  @media (min-width: 0px) and (max-width: 1000px) {
+    .bookmarks .mobile-off {
+      border-top: 0.4vw dotted white; } }
+
+.about {
+  background: url("neon-project-images/about-bg.jpg");
+  background-size: cover;
+  border-top: 0.2vw solid white;
+  color: white; }
+  .about iframe {
+    width: 560;
+    height: 315; }
+  .about .margin {
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    border-bottom: 0.1vw dashed white; }
+  .about h2 {
+    text-align: center;
+    margin-top: 3vh;
+    margin-bottom: 3vh; }
+  .about .desc {
+    background: #07081D;
+    text-align: center;
+    border-left: 0.2vw solid white; }
+  .about iframe {
+    margin-top: 3vh; }
+
+.offer {
+  background: url("neon-project-images/offer-bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  border-top: 0.2vw solid white;
+  border-bottom: 0.2vw solid white; }
+  .offer .margin {
+    padding-bottom: 5%;
+    padding-top: 5%;
+    border-bottom: 0.1vw dashed white; }
+    @media (min-width: 0px) and (max-width: 1000px) {
+      .offer .margin {
+        border-bottom: 0.3vw dashed white; } }
+  .offer .container {
+    background: #07081D;
+    color: white;
+    border-left: 0.2vw solid white;
+    border-right: 0.2vw solid white; }
+  .offer h1 {
+    padding-top: 3vh;
+    text-align: center; }
+  .offer img {
+    width: 100%;
+    height: auto; }
+    @media (min-width: 0px) and (max-width: 1000px) {
+      .offer img {
+        max-width: 60%; } }
+  @media (min-width: 0px) and (max-width: 1000px) {
+    .offer .mobile-on {
+      width: 40% !important;
+      margin-right: 5%;
+      margin-top: 10%; } }
+  .offer .second {
+    margin-top: 3vh; }
+  .offer .vertical-center {
+    margin-top: auto;
+    margin-bottom: auto; }
+  @media (min-width: 0px) and (max-width: 1000px) {
+    .offer .mobile-on {
+      position: absolute;
+      right: 0px;
+      top: 100px;
+      width: 354px; } }
+
+.prices {
+  background: url("neon-project-images/offer-bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  padding-bottom: 5%;
+  border-bottom: 0.2vw solid white; }
+  .prices .day-price {
+    font-size: 50pt;
+    bottom: 10px; }
+  .prices h1 {
+    padding: 5%; }
+  .prices h2 {
+    text-align: center; }
+    @media (min-width: 0px) and (max-width: 1000px) {
+      .prices h2 {
+        margin: 1vh; } }
+  .prices .desc {
+    background-color: #07081D;
+    padding: 1%;
+    border: 0.2vw solid white;
+    border-bottom: 0.2vw solid white; }
+    @media (min-width: 0px) and (max-width: 1000px) {
+      .prices .desc {
+        margin-bottom: 3vh; } }
+  .prices .big-price {
+    background-color: #07081D;
+    border: 0.2vw solid white;
+    border-top: 0.1vw dashed white; }
+  .prices .margin {
+    padding: 3%;
+    border-top: 0.1vw dashed white;
+    margin-bottom: 30%; }
+    @media (min-width: 0px) and (max-width: 1000px) {
+      .prices .margin {
+        margin-bottom: 15%;
+        border-top: 0.3vw dashed white;
+        padding: 5%; } }
+  .prices .more-href {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    font-size: 50pt;
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 100%;
+    left: -0.25%;
+    border-top: 0.1vw dashed white; }
+    @media (min-width: 0px) and (max-width: 1000px) {
+      .prices .more-href {
+        border-top: 0.3vw dashed white; } }
+
+.contact {
+  background: url("neon-project-images/contact-bg.jpg");
+  background-size: cover;
+  color: white; }
+  .contact .desc {
+    background-color: #07081D; }
+  .contact #map {
+    height: 300px;
+    margin-top: 3vh;
+    margin-bottom: 3vh; }
+  .contact .map {
+    border-right: 0.2vw solid white; }
+  .contact .address {
+    border-top: 0.2vw solid white;
+    border-right: 0.2vw solid white;
+    border-bottom: 0.2vw solid white;
+    padding-bottom: 3vh; }
+  .contact .margin {
+    padding-top: 3vh;
+    padding-bottom: 3vh; }
+  .contact .border-title {
+    border-bottom: 0.1vw dashed white; }
+    @media (min-width: 0px) and (max-width: 1000px) {
+      .contact .border-title {
+        border-bottom: 0.3vw dashed white; } }
+  @media (min-width: 0px) and (max-width: 1000px) {
+    .contact .contact-font {
+      font-size: 18pt; } }
+
+/*# sourceMappingURL=style.css.map */

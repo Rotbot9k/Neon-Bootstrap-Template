@@ -1,0 +1,295 @@
+@import 'reset.scss';
+$bg-basic-col: #07081D;
+$basic-margin: 3vh;
+$basic-border: 0.2vw solid white;
+$add-border: 0.1vw dashed white;
+$basic-padding: 5%;
+$portrait-phone: 599px;
+@mixin portrait-phone {
+  @media (min-width: 0px) and (max-width: 1000px) {
+    @content;
+  }
+}
+
+@mixin full-hd {
+  @media (min-width: 1500px) and (max-width: 2000px) {
+    @content;
+  }
+}
+.test {
+  position: fixed;
+}
+
+#navbar-top {
+  height: 20%;
+  @include portrait-phone {
+    height: 8%!important;
+  }
+}
+nav {
+  color: white;
+    .navbar-brand  {
+      font-size: 50pt;
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+    }
+    a   {
+      color: white;
+      font-size: 20pt;
+      margin-right: $basic-margin;
+    }
+    a.active  {
+      color: white!important;
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+    }
+}
+
+.push-right {
+  margin-left: 45%!important;
+  @include portrait-phone {
+    margin-left: 0!important;
+    background-color: rgba(7, 8, 29,0.7);
+  }
+  @include full-hd {
+    margin-left: 60%!important;
+  }
+}
+
+body {
+  position: relative;
+}
+
+.start  {
+  background: url("neon-project-images/start-bg.jpg");
+  background-size: cover;
+  height: 65vh;
+  border-bottom: $basic-border;
+  @include portrait-phone {
+    height: 70vh;
+  }
+}
+
+.bookmarks  {
+  background: $bg-basic-col;
+  color: white;
+  a {
+    color: white!important;
+    font-weight: bold!important;
+    }
+    a:hover  {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+    }
+  .desc {
+    border-right: $basic-border;
+  }
+  .title  {
+    margin-top: $basic-margin;
+    margin-bottom: $basic-margin;
+  }
+  .margin {
+    padding-right: $basic-padding;
+    padding-left: $basic-padding;
+  }
+  .more-href  {
+    position: absolute;
+    bottom: 1vh;
+    margin-left: 80%;
+    font-weight: bold;
+  }
+  .shortcut-container {
+    position: relative;
+    padding-bottom: 8vh;
+  }
+  .mobile-off {
+    @include portrait-phone {
+      border-top: 0.4vw dotted white;
+    }
+  }
+
+
+}
+
+.about  {
+  background: url("neon-project-images/about-bg.jpg");
+  background-size: cover;
+  border-top: $basic-border;
+  color: white;
+  iframe  {
+    width:560;
+    height:315;
+  }
+  .margin {
+    padding-right: $basic-padding;
+    padding-left: $basic-padding;
+    padding-bottom: $basic-padding;
+    border-bottom: $add-border;
+  }
+    h2  {
+      text-align:center;
+      margin-top: $basic-margin;
+      margin-bottom: $basic-margin;
+    }
+    .desc {
+      background: $bg-basic-col;
+      text-align: center;
+      border-left: $basic-border;
+    }
+    iframe  {
+      margin-top:$basic-margin;
+    }
+}
+
+
+.offer  {
+  background: url("neon-project-images/offer-bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  border-top: $basic-border;
+  border-bottom: $basic-border;
+  .margin {
+    padding-bottom: $basic-padding;
+    padding-top: $basic-padding;
+    border-bottom: $add-border;
+    @include portrait-phone {
+      border-bottom: 0.3vw dashed white;
+    }
+  }
+    .container  {
+      background: $bg-basic-col;
+      color: white;
+      border-left: $basic-border;
+      border-right: $basic-border;
+    }
+    h1  {
+      padding-top: $basic-margin;
+      text-align: center;
+    }
+    img {
+       width: 100%;
+       height: auto;
+       @include portrait-phone {
+         max-width: 60%;
+       }
+    }
+    .mobile-on  {
+      @include portrait-phone {
+        width: 40%!important;
+        margin-right: 5%;
+        margin-top: 10%;
+      }
+    }
+    .second {
+      margin-top: $basic-margin;
+    }
+    .vertical-center  {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+    .mobile-on  {
+      @include portrait-phone {
+        position: absolute;
+        right: 0px;
+        top: 100px;
+        width: 354px;
+      }
+    }
+
+}
+
+.prices {
+  background: url("neon-project-images/offer-bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  padding-bottom: $basic-padding;
+  border-bottom: $basic-border;
+  .day-price  {
+    font-size: 50pt;
+    bottom: 10px;
+  }
+  h1  {
+    padding: $basic-padding;
+  }
+  h2  {
+    text-align: center;
+    @include portrait-phone {
+    margin: 1vh;
+    }
+  }
+  .desc {
+    background-color: $bg-basic-col;
+    padding: 1%;
+    border: $basic-border;
+    border-bottom: $basic-border;
+    @include portrait-phone {
+      margin-bottom: 3vh;
+    }
+  }
+  .big-price  {
+    background-color: $bg-basic-col;
+    border: $basic-border;
+    border-top: $add-border;
+
+  }
+  .margin {
+    padding: 3%;
+    border-top: $add-border;
+    margin-bottom: 30%;
+    @include portrait-phone {
+      margin-bottom: 15%;
+      border-top: 0.3vw dashed white;
+      padding: 5%;
+    }
+  }
+  .more-href  {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    font-size: 50pt;
+    margin-left: 0%; margin-right: 0%;
+    width: 100%;
+    left: -0.25%;
+    border-top: $add-border;
+    @include portrait-phone {
+      border-top: 0.3vw dashed white;
+    }
+  }
+}
+
+.contact  {
+  background: url("neon-project-images/contact-bg.jpg");
+  background-size: cover;
+  color: white;
+    .desc {
+      background-color: $bg-basic-col;
+    }
+    #map  {
+      height: 300px;
+      margin-top: $basic-margin;
+      margin-bottom: $basic-margin;
+    }
+    .map  {
+      border-right: $basic-border;
+    }
+    .address  {
+      border-top: $basic-border;
+      border-right: $basic-border;
+      border-bottom: $basic-border;
+      padding-bottom: $basic-margin;
+    }
+    .margin {
+      padding-top: $basic-margin;
+      padding-bottom: $basic-margin;
+    }
+    .border-title {
+      border-bottom:  $add-border;
+      @include portrait-phone {
+        border-bottom: 0.3vw dashed white;
+      }
+
+    }
+    .contact-font {
+      @include portrait-phone {
+        font-size: 18pt;
+      }
+    }
+}
