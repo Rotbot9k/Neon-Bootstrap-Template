@@ -10,4 +10,4 @@ Photos and graphic are used only for present style of template, and non-commerci
 
 I was using sass so there are two sass files for view.
 
-Test: https://cdn.rawgit.com/WilhelmTim/Neon-Bootstrap-Template/e918be70/index.html
+Test: https://cdn.rawgit.com/WilhelmTim/Neon-Bootstrap-Template/e5f80225/index.html
